@@ -1,4 +1,4 @@
-﻿namespace FkaCalender
+﻿namespace FkaCalendar
 {
     partial class UserControlDays
     {

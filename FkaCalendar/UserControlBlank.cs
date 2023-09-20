@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FkaCalender
+namespace FkaCalendar
 {
     public partial class UserControlBlank : UserControl
     {
         public UserControlBlank()
         {
             InitializeComponent();
+        }
+
+        private void UserControlBlank_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

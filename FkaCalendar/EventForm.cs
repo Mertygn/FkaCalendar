@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
-namespace FkaCalender
+namespace FkaCalendar
 {
     public partial class EventForm : Form
     {

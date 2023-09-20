@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{497E1EE5-807D-4752-8256-0205FAA23D2F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FkaCalender</RootNamespace>
-    <AssemblyName>FkaCalender</AssemblyName>
+    <RootNamespace>FkaCalendar</RootNamespace>
+    <AssemblyName>FkaCalendar</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -179,6 +179,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControlBlank.resx">
       <DependentUpon>UserControlBlank.cs</DependentUpon>

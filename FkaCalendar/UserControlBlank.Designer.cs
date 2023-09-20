@@ -1,4 +1,4 @@
-﻿namespace FkaCalender
+﻿namespace FkaCalendar
 {
     partial class UserControlBlank
     {
@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "UserControlBlank";
             this.Size = new System.Drawing.Size(150, 108);
+            this.Load += new System.EventHandler(this.UserControlBlank_Load);
             this.ResumeLayout(false);
 
         }
