@@ -15,6 +15,7 @@ namespace FkaCalender
     public partial class Form1 : Form
     {
         int month, year;
+        public static int static_month, static_year;
         public Form1()
         {
             InitializeComponent();
@@ -33,6 +34,9 @@ namespace FkaCalender
 
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text = monthname + " " + year;
+
+            static_month = month;
+            static_year = year;
 
             DateTime startofthemont = new DateTime(year,month,1); 
             int days = DateTime.DaysInMonth(now.Year,now.Month);
@@ -75,6 +79,8 @@ namespace FkaCalender
             daycontainer.Controls.Clear();
             //ayı eksiltip bir sonrakiaya geçmek
             month--;
+            static_month = month;
+            static_year = year;
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text = monthname + " " + year;
             DateTime startofthemont = new DateTime(year, month, 1);
@@ -100,10 +106,12 @@ namespace FkaCalender
             daycontainer.Controls.Clear();
             //ayı artırıp bir sonrakiaya geçmek
             month++;
+            static_month = month;
+            static_year = year;
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text = monthname + " " + year;
             DateTime startofthemont = new DateTime(year, month, 1);
-            int days = DateTime.DaysInMonth(year, month);
+                int days = DateTime.DaysInMonth(year, month);
             int dayoftheweek = Convert.ToInt32(startofthemont.DayOfWeek.ToString("d")) + 1;
             for (int i = 1; i < dayoftheweek; i++)
             {
